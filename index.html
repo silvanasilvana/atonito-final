@@ -1,286 +1,197 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ATONITO</title>
   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="style-navbar.css">
-   <link rel="stylesheet" href="footer.css">
-
+  <link rel="stylesheet" href="style-navbar.css">
+  <link rel="stylesheet" href="footer.css">
 </head>
 <body>
 
   <!-- Contenedor donde se cargará la Navbar -->
   <div id="navbar-container"></div>
 
-   <!-- Contenedor FOOTER -->
-    <script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-container').innerHTML = data;
-    })
-    .catch(error => console.error('Error al cargar el footer:', error));
-</script>
-
-  
   <!-- CONTENIDO PORTADA -->
-<main>
-  <!-- Imagen de portada con texto inclinado -->
-<section class="portada">
-  <h1 class="portada-titulo">
-    El poder <br>
-    del fuego <br>
-    nos une
-  </h1>
-  <img src="./images/portada.png" alt="Portada Infinity Store">
+  <main>
+    <!-- Imagen de portada con texto inclinado -->
+    <section class="portada">
+      <h1 class="portada-titulo">
+        El poder <br>
+        del fuego <br>
+        nos une
+      </h1>
+      <img src="./images/portada.png" alt="Portada Infinity Store">
+    </section>
 
-
-</section>
-
-
-  <!-- CONTENIDO SECCION 2 -->
-   <!-- NUESTROS CORTES -->
-<!-- CONTENIDO SECCION 2 --> 
-<!-- NUESTROS CORTES -->
-<section class="nuestros-cortes">
-  <h2>Nuestros Cortes</h2>
-  <div class="cortes-container">
-
-    <!-- Ribeye -->
-   <div class="corte-card">
-  <div class="corte-img">
-    <img src="images/carne2.jpg" alt="Ribeye">
-  </div>
-  <h3>Ribeye</h3>
-  <p>Rápido a la parrilla</p>
-
-  <a href="producto.html" class="btn-link">
-    <button>Comprar</button>
-  </a>
-</div>
-
-
-    <!-- Arrachera -->
-    <div class="corte-card">
-      <div class="corte-img">
-        <img src="images/carne2.jpg" alt="Arrachera">
+    <!-- NUESTROS CORTES -->
+    <section class="nuestros-cortes">
+      <h2>Nuestros Cortes</h2>
+      <div class="cortes-container">
+        <!-- Ribeye -->
+        <div class="corte-card">
+          <div class="corte-img">
+            <img src="images/carne2.jpg" alt="Ribeye">
+          </div>
+          <h3>Ribeye</h3>
+          <p>Rápido a la parrilla</p>
+          <a href="producto.html" class="btn-link">
+            <button>Comprar</button>
+          </a>
+        </div>
+        <!-- Arrachera -->
+        <div class="corte-card">
+          <div class="corte-img">
+            <img src="images/carne2.jpg" alt="Arrachera">
+          </div>
+          <h3>Arrachera</h3>
+          <p>Fácil de marinar</p>
+          <a href="producto.html" class="btn-link">
+            <button>Comprar</button>
+          </a>
+        </div>
+        <!-- New York -->
+        <div class="corte-card">
+          <div class="corte-img">
+            <img src="images/carne2.jpg" alt="New York">
+          </div>
+          <h3>New York</h3>
+          <p>Hazlo al sartén</p>
+          <a href="producto.html" class="btn-link">
+            <button>Comprar</button>
+          </a>
+        </div>
+        <!-- Sirloin -->
+        <div class="corte-card">
+          <div class="corte-img">
+            <img src="images/carne2.jpg" alt="Sirloin">
+          </div>
+          <h3>Sirloin</h3>
+          <p>Buena elección</p>
+          <a href="producto.html" class="btn-link">
+            <button>Comprar</button>
+          </a>
+        </div>
       </div>
-      <h3>Arrachera</h3>
-      <p>Fácil de marinar</p>
-        <a href="producto.html" class="btn-link">
-    <button>Comprar</button>
-  </a>
-    </div>
+    </section>
 
-    <!-- New York -->
-    <div class="corte-card">
-      <div class="corte-img">
-        <img src="images/carne2.jpg" alt="New York">
+    <!-- UBICACION -->
+    <section class="ubicacion" id="ubicacion">
+      <div class="ubicacion-container">
+        <div class="ubicacion-texto">
+          <h2>Ubicación</h2>
+          <p>
+            Paseo de las Flores y Paseo del Campestre s/n,<br>
+            Colonia Campestre La Rosita,<br>
+            C.P. 27250, Torreón, Coahuila, México
+          </p>
+          <a href="https://www.google.com/maps/place/Paseo+de+las+Flores+y+Paseo+del+Campestre,+Torreón,+Coahuila,+México" target="_blank" class="btn-mapa">
+            Ver en Google Maps
+          </a>
+        </div>
+        <div class="ubicacion-mapa">
+          <a href="https://www.google.com/maps/place/Paseo+de+las+Flores+y+Paseo+del+Campestre,+Torreón,+Coahuila,+México" target="_blank">
+            <img src="images/mapa.png" alt="Ver Ubicación">
+          </a>
+        </div>
       </div>
-      <h3>New York</h3>
-      <p>Hazlo al sartén</p>
-       <a href="producto.html" class="btn-link">
-    <button>Comprar</button>
-  </a>
-    </div>
+    </section>
 
-    <!-- Sirloin -->
-    <div class="corte-card">
-      <div class="corte-img">
-        <img src="images/carne2.jpg" alt="Sirloin">
+    <!-- RECETAS -->
+    <section class="recetas" id="recetas">
+      <h2>RECETAS SENCILLAS</h2>
+      <div class="recetas-container">
+        <a href="parrilla.html" class="receta-card">
+          <img src="images/Parrilla.jpg" alt="Parrilla">
+          <span>Parrilla</span>
+        </a>
+        <a href="cocina.html" class="receta-card">
+          <img src="images/cocina.png" alt="Cocina">
+          <span>Cocina</span>
+        </a>
+        <a href="diaadia.html" class="receta-card">
+          <img src="images/diadia.jpg" alt="Día a día">
+          <span>Día a día</span>
+        </a>
       </div>
-      <h3>Sirloin</h3>
-      <p>Buena elección</p>
-       <a href="producto.html" class="btn-link">
-    <button>Comprar</button>
-  </a>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!-- COMO ES ATONITO -->
+    <section class="atonito">
+      <h2>¿CÓMO ES ATONITO?</h2>
+      <div class="atonito-container">
+        <div class="atonito-card">
+          <img src="images/frescura.png" alt="Calidad">
+          <span>Cortes Frescos Diarios</span>
+        </div>
+        <div class="atonito-card">
+          <img src="images/sencillo.png" alt="Proceso">
+          <span>Preparación Facil</span>
+        </div>
+        <div class="atonito-card">
+          <img src="images/paratodos.png" alt="Sabor">
+          <span>Recomendado Por Familias</span>
+        </div>
+      </div>
+    </section>
 
-<!-- UBICACION -->
-<section class="ubicacion" id="ubicacion">
-  <div class="ubicacion-container">
-    <div class="ubicacion-texto">
-      <h2>Ubicación</h2>
-      <p>
-        Paseo de las Flores y Paseo del Campestre s/n,<br>
-        Colonia Campestre La Rosita,<br>
-        C.P. 27250, Torreón, Coahuila, México
-      </p>
-      <!-- Botón que lleva a Google Maps -->
-      <a href="https://www.google.com/maps/place/Paseo+de+las+Flores+y+Paseo+del+Campestre,+Torreón,+Coahuila,+México" target="_blank" class="btn-mapa">
-        Ver en Google Maps
-      </a>
-    </div>
-    <div class="ubicacion-mapa">
-      <!-- Imagen que también lleva a Google Maps -->
-      <a href="https://www.google.com/maps/place/Paseo+de+las+Flores+y+Paseo+del+Campestre,+Torreón,+Coahuila,+México" target="_blank">
-        <img src="images/mapa.png" alt="Ver Ubicación">
-      </a>
-    </div>
-  </div>
-</section>
+    <!-- CERTIFICACIONES -->
+    <section class="certificaciones">
+      <source src="video/parrilla2.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+      <div class="certificaciones-content">
+        <h2>NUESTRAS CERTIFICACIONES</h2>
+        <div class="certificaciones-container">
+          <img src="images/certificado.png" alt="Certificación 1">
+          <img src="images/certificado.png" alt="Certificación 2">
+          <img src="images/certificado.png" alt="Certificación 3">
+          <img src="images/certificado.png" alt="Certificación 4">
+        </div>
+        <div class="certificaciones-container segunda-fila">
+          <img src="images/certificado.png" alt="Certificación 5">
+          <img src="images/certificado.png" alt="Certificación 6">
+          <img src="images/certificado.png" alt="Certificación 7">
+          <img src="images/certificado.png" alt="Certificación 8">
+        </div>
+      </div>
+    </section>
+  </main>
 
-
-
-
-
-  <!-- RECETAS -->
-   <!-- RECETAS -->
-<section class="recetas" id="recetas">
-  <h2>RECETAS SENCILLAS</h2>
-
-  <div class="recetas-container">
-
-    <a href="parrilla.html" class="receta-card">
-      <img src="images/Parrilla.jpg" alt="Parrilla">
-      <span>Parrilla</span>
-    </a>
-
-    <a href="cocina.html" class="receta-card">
-      <img src="images/cocina.png" alt="Cocina">
-      <span>Cocina</span>
-    </a>
-
-    <a href="diaadia.html" class="receta-card">
-      <img src="images/diadia.jpg" alt="Día a día">
-      <span>Día a día</span>
-    </a>
-
-  </div>
-</section>
-
-
-
- <!-- COMO ES ATONITO -->
-  <section class="atonito">
-  <h2>¿CÓMO ES ATONITO?</h2>
-
-  <div class="atonito-container">
-
-    <div class="atonito-card">
-      <img src="images/frescura.png" alt="Calidad">
-      <span>Cortes Frescos Diarios</span>
-    </div>
-
-    <div class="atonito-card">
-      <img src="images/sencillo.png" alt="Proceso">
-      <span>Preparación Facil</span>
-    </div>
-
-    <div class="atonito-card">
-      <img src="images/paratodos.png" alt="Sabor">
-      <span>Recomendado Por Familias</span>
-    </div>
-
-  </div>
-</section>
-
-
-
-
- <!-- CERTIFICACIONES-->
-<section class="certificaciones">
-
-  <!-- VIDEO DE FONDO -->
-
-  <source src="video/parrilla2.mp4" type="video/mp4">
-    Tu navegador no soporta video.
-  </video>
-
-  <!-- CONTENIDO ENCIMA -->
-  <div class="certificaciones-content">
-    <h2>NUESTRAS CERTIFICACIONES</h2>
-  <div class="certificaciones-container">
-    <img src="images/certificado.png" alt="Certificación 1">
-    <img src="images/certificado.png" alt="Certificación 2">
-    <img src="images/certificado.png" alt="Certificación 3">
-    <img src="images/certificado.png" alt="Certificación 4">
-  </div>
-
-  <!-- FILA 2 -->
-  <div class="certificaciones-container segunda-fila">
-    <img src="images/certificado.png" alt="Certificación 5">
-    <img src="images/certificado.png" alt="Certificación 6">
-    <img src="images/certificado.png" alt="Certificación 7">
-    <img src="images/certificado.png" alt="Certificación 8">
-  </div>
-</div>
-
-</section>
-
+  <!-- Footer -->
+  <div id="footer-container"></div>
 
   <!-- SCRIPTS -->
-<script>
-  function centerSectionById(id) {
-    const target = document.getElementById(id);
-    if (!target) return;
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
 
-    const elementTop = target.getBoundingClientRect().top + window.scrollY;
-    const offset = window.innerHeight / 2 - target.offsetHeight / 2;
+      // Cargar Navbar desde la misma carpeta
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+        })
+        .catch(err => console.error('Error cargando navbar:', err));
 
-    window.scrollTo({
-      top: elementTop - offset,
-      behavior: 'smooth'
+      // Cargar Footer desde la misma carpeta
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        })
+        .catch(err => console.error('Error cargando footer:', err));
+
     });
-  }
 
-  document.addEventListener('DOMContentLoaded', () => {
-
-    // Cargar Navbar desde la raíz
-    fetch('/navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-container').innerHTML = data;
-
-        // Scroll centrado al hacer click en links con hash
-        const links = document.querySelectorAll('#navbar-container a[href*="#"]');
-        links.forEach(link => {
-          link.addEventListener('click', e => {
-            const href = link.getAttribute('href');
-            if(href.includes('#')) {
-              e.preventDefault();
-              const id = href.split('#')[1];
-              centerSectionById(id);
-              history.pushState(null, null, '#' + id);
-            }
-          });
-        });
-
-        // Si llegamos con hash desde otra página, centramos la sección
-        if (window.location.hash) {
-          const hashId = window.location.hash.substring(1);
-          setTimeout(() => centerSectionById(hashId), 100);
-        }
-      })
-      .catch(err => console.error('Error cargando navbar:', err));
-
-    // Cargar Footer desde la raíz
-    fetch('/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      })
-      .catch(err => console.error('Error cargando footer:', err));
-  });
-</script>
-
-
-
-
-  <!-- FOOTER -->
-
-
-<div id="footer-container"></div>
-
+    // Función para centrar secciones por ID
+    function centerSectionById(id) {
+      const target = document.getElementById(id);
+      if (!target) return;
+      const elementTop = target.getBoundingClientRect().top + window.scrollY;
+      const offset = window.innerHeight / 2 - target.offsetHeight / 2;
+      window.scrollTo({ top: elementTop - offset, behavior: 'smooth' });
+    }
+  </script>
 
 </body>
 </html>
-
-
-
